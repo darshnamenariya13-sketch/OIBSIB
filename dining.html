@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dining</title>
+    <style>
+
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-color: #e8e8e8;
+    color: #333;
+}
+
+    .navbar{
+    width: 85%;
+    margin: auto;
+    padding: 45px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 110px;
+    cursor: pointer;
+    
+}
+
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: teal;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    transform: translate(-50% -50%);
+    text-align: center;
+}
+
+.content h1{
+    margin-bottom: 10px;
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+.image{
+
+    width: 450px;
+    height: auto;   
+    border-radius: 0;
+    margin-right: 40px;
+    margin-top: 15%;
+    float: left;
+}
+
+.text{
+    font-style: italic;
+    font-size: 15px;
+}
+
+.dining-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px;
+}
+
+.dining-container p{
+    font-size: 20px;
+    line-height: 1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+    </style>
+</head>
+<body>
+            <div class="banner">
+        <div class="navbar">
+            <img src='photo3.jfif' class="logo">
+            <ul>
+                <li><a href="interior.html">Home</a></li>
+                <li><a href="bedroom.html">Bedroom</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="kitchen.html">Kitchen</a></li>
+            </ul>
+        </div>
+        <div class="content">
+    <h1>Welcome to Dining area !</h1>
+    <p class="text">Eat, Talk, and enjoy with family.<br>
+     The dining area is the heart of every home where families and friends come togther to share meals and create memories.</p>
+    </div>
+
+    <div class="dining-container">
+        <img src='image12.jpg' class="image">
+        <div>
+            <p> *  "A perfect blend of sophistication and warmth - where nature light meets timeless design"<br><br>
+                *  "This dining Area reflects modern elegance with soft tones, wooden texture , and an inviting amniance."<br><br>
+                *  "Designed for comfort and style and style , this space turns every meal into a memorle."
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>

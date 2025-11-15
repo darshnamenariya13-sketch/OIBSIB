@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature_Converter</title>
+
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 10%;
+            background-color: #f5f7ff;
+        }
+
+        .box{
+            padding: 25px;
+            border-radius: 20px;
+            text-align: center;
+            width: 300px;
+            background-color: white;
+        }
+        input,select{
+            width: 100%;
+            padding: 10px;
+            font-size: 17px;
+            margin-top: 20px;
+            border-radius: 10px;
+            border:  solid;
+
+        }
+
+        button{
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 17px;
+            background: #899bd1;
+        }
+
+        button:hover {
+            background-color: wheat;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+
+
+</head>
+<body>
+
+        <div class="box">
+        <h1>Temperature  Converter</h1>
+         
+        <input id="value" type="number" placeholder="Enter value">
+
+        <select id="unit">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+        </select>
+
+        <button onclick="convert()">Convert</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function convert() {
+            let val = document.getElementById("value").value;
+            let unit = document.getElementById("unit").value;
+            let result;
+
+            if (unit === "C")
+        {
+            result = (val * 9/5) +32;
+
+            document.getElementById("result").innerText = "Fahrenheit:" + result;
+        }
+        else{
+            result= (val-32) * 5/9;
+            document.getElementById("result").innerText = "Celsius:" + result;
+        }
+        }
+    </script>
+</body>
+</html>
